@@ -1,0 +1,4 @@
+* imgbb.el
+A simple image upload client for https://imgbb.com
+** Quick start
+Run =M-x imgbb-upload= and select an image file. The file is uploaded to imgbb.com, and the image url is shown in the minibuffer. It is also put into the kill ring.
