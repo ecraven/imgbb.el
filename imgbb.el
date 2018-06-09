@@ -20,6 +20,7 @@
 ;;
 ;;; Code:
 (require 'request)
+(require 'cl-lib)
 
 (defvar imgbb-url
   "https://imgbb.com/json"
@@ -30,6 +31,7 @@
     (action . "upload"))
   "Default parameters to send.")
 
+;;;###autoload
 (defun imgbb-upload (filename)
   "Upload FILENAME to imgbb.com, show the image url and put it into the kill ring."
   (interactive "fImage file: ")
